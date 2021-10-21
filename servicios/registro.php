@@ -1,6 +1,6 @@
 <?php
     
-    include ('db.php');
+  
     
     $nombre = $_POST['nomusu'];
     $apellido = $_POST['apeusu'];
@@ -8,14 +8,14 @@
     $telefono = $_POST['telusu'];
     $password = $_POST['pasusu'];
      //encriptador de password
-    
-    $query = "INSERT INTO usuario (nomusu, apeusu, emausu, telusu, pasusu) 
-    VALUES ('$nombre','$apellido', '$correo', '$telefono', '$password')";
+
+     $conexion = mysqli_connect("localhost","root","","ferreteria") or die("Error en la conexiÃ³n a la base de datos");
+    $sql = "INSERT INTO usuario (nomusu, apeusu, emausu, telusu, pasusu) VALUES ('$nombre','$apellido', '$correo', '$telefono', '$password')";
 
     //VALIDADOR DE DATOS REPETIDOS EN BD SQL
     
     //INICIO DE ENVIO DE DATOS EN BD SQL
-    $ejecutar = mysqli_query ($conexion, $query);
+    $ejecutar = mysqli_query ($conexion, $sql);
 
     if($ejecutar){
         echo '

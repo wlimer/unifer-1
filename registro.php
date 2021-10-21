@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<main>
+
     <div>
         <div class="contenedor__registro">
           
@@ -59,6 +59,6 @@
          </div>
 
     </div>                                      
-</main>      
+    
 </body>
 </html>
