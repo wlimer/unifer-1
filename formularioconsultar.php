@@ -78,7 +78,7 @@ function buscarProducto($id_productos)
                 </div>
               </div>
               <div >
-                            <form class="user" method="POST" action="consultar2.php">
+                            <form class="user" method="POST" action="servicios/consultar2.php">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                       Identificacion producto:  <input type="text" name="id_producto" class="form-control form-control-user" id="id_producto" width=100% 

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["ozKKd3R"]); }
+
+__d("CometPushViewCloseButton.react",["fbt","ix","CometCircleButton.react","fbicon","react","useCometRouterDispatcher"],(function(a,b,c,d,e,f,g,h,i){"use strict";var j=d("react");function a(a){var b=a.setIsButtonFocused,e=c("useCometRouterDispatcher")();a=function(){e&&e.popPushView&&e.popPushView()};return j.jsx(c("CometCircleButton.react"),{color:"primary",icon:d("fbicon")._(i("478233"),20),label:h._(/*FBT_CALL*/"Cerrar"/*FBT_CALL*/),onFocusIn:function(){return b(!0)},onFocusOut:function(){return b(!1)},onPress:a,size:40})}a.displayName=a.name+" [from "+f.id+"]";g["default"]=a}),98);

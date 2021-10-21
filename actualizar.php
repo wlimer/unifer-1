@@ -8,7 +8,7 @@ $ejecutar = $conexion->query($sql);
 
 
 
-
+<div class="contenedor__tabla_principal">
 <body background=pink>
 <table border=1  width=100% >
 <tr> <b><h1 align="center"></h1> </b></tr>
@@ -22,6 +22,7 @@ $ejecutar = $conexion->query($sql);
         <td> actualizar </td>
         <td> comandos </td>
     </tr>
+</div>
     
 <?php
    while ($fila = mysqli_fetch_object($ejecutar))
@@ -35,7 +36,7 @@ $ejecutar = $conexion->query($sql);
     echo '<td bgcolor=#fcecdd><img src="imagen/' .$fila->Imagen.'" width="300" height="150"></td>';
     echo '<td> <form action="actualiza.php" method="POST"> 
    <input type="hidden" name="id_productos" value="'.$fila->id_productos.'">
-     <input type="submit" value="Actualizar" class="form-control form-control-user">
+     <input type="submit" value="Actualizar "  class="form-control form-control-user" >
      </form>
      </td>';
     echo '<td> 

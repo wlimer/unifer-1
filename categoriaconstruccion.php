@@ -14,6 +14,7 @@ $ejecutar = $conexion->query($sql);
     <tr bgcolor= #ffdf6b> 
         
         <td>Nombre producto </td>
+        <td>id_productos </td>
         <td> Precio </td>
         <td> Referencia </td>
    
@@ -28,6 +29,7 @@ $ejecutar = $conexion->query($sql);
     {
         echo '<tr >'; 
         echo '<td bgcolor= #00adb5>'.$fila->nombre_producto.'</td>';
+     
         echo '<td bgcolor= #aad8d3>'.$fila->precio.'</td>';
         echo '<td bgcolor= #eeeeee>'.$fila->referencia.'</td>';
     echo '<td bgcolor=#fcecdd><img src="imagen/' .$fila->Imagen.'" width="300" height="150"></td>';
