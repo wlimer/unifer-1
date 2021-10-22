@@ -52,6 +52,7 @@ main {
   max-width: 800px;
   margin: auto;
   position: relative;
+
 }
 
 .box-back {
@@ -191,3 +192,4 @@ main {
     position: relative;
   }
 }
+

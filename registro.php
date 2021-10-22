@@ -19,7 +19,7 @@
         <div class="contenedor__registro">
           
         
-        <h1 align="center"> FORMULARIO DE REGISTRO </h1> 
+        <h1 align="center"><b> FORMULARIO DE REGISTRO</b> </h1> 
                 
                                          <form action="servicios/registro.php" method="POST" class="registro" onsubmit="return validar();"> 
                     
@@ -43,7 +43,7 @@
                                                 <input type="password" placeholder="Confirmar contraseña" id="contraseña2" class="form-control form-control-user">
                                                 <br>
                                                 <br>
-                                                <button type="submit">Registrarse </button class="form-control form-control-user" >
+                                                <INPUT TYPE="submit" NAME="REGISTRARME" VALUE="REGISTRARME" class="btn btn-success btn-user btn-block">
 
 
 

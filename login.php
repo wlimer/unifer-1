@@ -7,15 +7,15 @@
     
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style_login.css">
-<body>
+<body >
     <main>
 
         <div class="contenedor__todo">
 
           
-
+          <div class="login">
             <div class="contenedor__login-register">
-                <form action="servicios/login.php" method="POST" class="formulario__login" name="form1" onsubmit="return validar1()">
+                <form  align="center" action="servicios/login.php" method="POST" class="formulario__login" name="form1" onsubmit="return validar1()">
                     <H2>Iniciar Sesion</H2>
                     <Input type="text" placeholder="Correo Electronico" id="correo1" name="emausu">
                     <input type="password" placeholder="Contraseña" id="contraseña3" name="pasusu">
@@ -26,7 +26,7 @@
                 </form>
 
                 
-            </div>
+          </div> </div>
         </div>
     </main>
     <script src="js/script.js"></script>
