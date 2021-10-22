@@ -27,19 +27,21 @@ if ($reg = mysqli_fetch_array($registros)) {
              
                  <form>
                        <H2>CONSULTAR PRODUCTO</H2>
-                        <div class="col-sm-6 mb-3 mb-sm-0">
+                   
                          Identificacion producto: 
                         <input type="text" name="id_producto" class="form-control form-control-user" id="id_producto" placeholder=""  class="form-control form-control-user"> 
                          <br>
                         <input TYPE="submit"  VALUE="ACTUALIZAR DATOS" class="btn btn-warning btn-user btn-block" class="form-control form-control-user">
                       
               
-                 </div>     
+                   
                  <br>
                   <br>
         </div>
                   
             <div class="contenedor__actualizarproducto">
+
+            
                 <form  
                
                     <H2>ACTUALIZAR PRUDUCTO</H2>
