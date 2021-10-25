@@ -1,3 +1,14 @@
+
+<?php
+session_start();
+include ("db.php");
+$sql = "select * from productos";
+$ejecutar = $conexion->query($sql);
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +36,8 @@ if ($reg = mysqli_fetch_array($registros)) {
 
         <div class="contenedor__consultar">
              
-                 <form>
+        <form >
+               
                        <H2>CONSULTAR PRODUCTO</H2>
                    
                          Identificacion producto: 
@@ -41,9 +53,12 @@ if ($reg = mysqli_fetch_array($registros)) {
                   
             <div class="contenedor__actualizarproducto">
 
+
+
+
             
                 <form  
-               
+
                     <H2>ACTUALIZAR PRUDUCTO</H2>
                     <br>
                     <br>

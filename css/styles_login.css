@@ -20,6 +20,7 @@ background-image: url(../assets/fondo.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
+
 }
 .login { 
 	position: absolute;
@@ -53,4 +54,21 @@ input {
 	transition: box-shadow .5s ease;
 }
 input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+.h2{
+
+    
+    height: 178px;
+    background-image: url(../assets/logo.jpg);
+background-repeat: no-repeat;
+margin-left: 8px ;
+background-size: 240px;
+width: 230px;
+border-radius: 490px;
+
+
+
+
+
+}
 
