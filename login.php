@@ -5,30 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style_login.css">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="css/styles_login.css">
+
 <body >
-    <main>
+   
+<div class="login">
+	<h1>Login</h1>
+    <form  action="servicios/login.php" method="POST"  name="form1" onsubmit="return vlidar1()">
+    	<input type="text" placeholder="correo eletronico" id="correo1" name="emausu" required="required" />
+        <input type="password"  placeholder="contraseña"  id="contraseña3" name="pasusu" required="required" />
+        <button type="submit" id="Ingresar" class="btn btn-primary btn-block btn-large">Ingresar</button>
+    </form>
+</div>
+       
 
-        <div class="contenedor__todo">
-
-          
-          <div class="login">
-            <div class="contenedor__login-register">
-                <form  align="center" action="servicios/login.php" method="POST" class="formulario__login" name="form1" onsubmit="return validar1()">
-                    <H2>Iniciar Sesion</H2>
-                    <Input type="text" placeholder="Correo Electronico" id="correo1" name="emausu">
-                    <input type="password" placeholder="Contraseña" id="contraseña3" name="pasusu">
-                    <div class="box__back-register">
-                
-                    <button id="Ingresar">Entrar</button>
-                  
-                </form>
-
-                
-          </div> </div>
-        </div>
-    </main>
+    
+       
+   
     <script src="js/script.js"></script>
 </body>
 
