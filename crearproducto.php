@@ -34,7 +34,7 @@
                 <div class="contenedor__crearproducto">
                         <FORM class="user" ACTION="crearproducto.php" METHOD="POST">
                          
-                         IDENTIFICACION DEL PRODUCTO: <INPUT TYPE="text" NAME="id_productos" class="form-control form-control-user"  ><br>
+                        
                             CODIGO DEL PRODUCTO:          <INPUT TYPE="text" NAME="codigo" class="form-control form-control-user"><br>
                             NOMBRE DEL PRODUCTO:          <INPUT TYPE="text" NAME="nombre_producto" class="form-control form-control-user"><br>
                             PRECIO:                      <INPUT TYPE="text" NAME="precio" class="form-control form-control-user"><br>
@@ -42,7 +42,7 @@
                             IMAGEN:                      <INPUT TYPE="text" NAME="imagen" class="form-control form-control-user"><br>
                             INGRESA LA CATEGORIA:        <INPUT TYPE="text" NAME="productos_id_categoria" class="form-control form-control-user"><br>
                         
-                           <INPUT TYPE="submit" NAME="GUARDAR PRODUCTO" VALUE="GUARDAR PRODUCTO" class="btn btn-success btn-user btn-block">
+                           <INPUT TYPE="submit" NAME="crear" VALUE="crear" class="btn btn-success btn-user btn-block">
                                                          
                         </FORM>
              
@@ -61,7 +61,7 @@
 
 <?php
 $crear=$_POST['crear'];
-$id_productos=$_POST['id_productos'];
+
 $codigo=$_POST['codigo'];
 $nombre_producto=$_POST['nombre_producto'];
 $precio=$_POST['precio'];
@@ -71,7 +71,7 @@ $productos_id_categoria=$_POST['productos_id_categoria'];
 
 
 $conexion = mysqli_connect("localhost","root","","ferreteria") or die("Error en la conexiÃ³n a la base de datos");
-$sql = "insert into productos (id_productos,codigo,nombre_producto,precio, referencia,Imagen,productos_id_categoria)  VALUES ('$id_productos','$codigo','$nombre_producto','$precio','$referencia','$imagen','$productos_id_categoria');";
+$sql = "insert into productos (codigo,nombre_producto,precio, referencia,Imagen,productos_id_categoria)  VALUES ('$codigo','$nombre_producto','$precio','$referencia','$imagen','$productos_id_categoria');";
 
 if (isset($crear))
 {
