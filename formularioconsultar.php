@@ -1,4 +1,5 @@
-<?php
+
+    <?php
 session_start();
 include ("db.php");
 
@@ -69,7 +70,7 @@ function buscarProducto($id_productos)
                     <div class="col-lg-7">
                    
                         
-                        <h1> <b align="center">CONSULTAR PRODUCTO</b></h1> 
+                        <h1> <b >CONSULTAR PRODUCTO</b></h1> 
                         <INPUT TYPE="submit" NAME="volver" VALUE="volver" class="btn btn-success btn-user btn-block">
             
                  <div class="col-lg-7">
