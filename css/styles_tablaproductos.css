@@ -1,0 +1,49 @@
+table {
+    border: 45px;
+     width: 100%;
+     background-image: url(../assets/fondo.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+   
+}
+    
+
+tr{
+
+
+    color: black;
+    text-align: center;
+
+
+}
+
+.separarproductos{
+
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-column: 2px;
+    grid-auto-rows: auto;
+}
+
+.producto{
+
+ 
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-column: 2px;
+  grid-auto-rows: auto;
+}
+
+table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    border-color: rgba(30, 174, 210, 0.795);
+    border-radius: 10px;
+
+  }
+
+h1{
+  background-color: cornflowerblue;
+}
