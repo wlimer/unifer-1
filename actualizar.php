@@ -13,7 +13,7 @@ $ejecutar = $conexion->query($sql);
 <table border=1  width=100% >
 <tr> <b><h1 align="center"></h1> </b></tr>
     <tr bgcolor= #ffdf6b> 
-        
+        <td> Id producto </td>
         <td>Nombre producto </td>
         <td> Precio </td>
         <td> Referencia </td>
@@ -28,8 +28,11 @@ $ejecutar = $conexion->query($sql);
    while ($fila = mysqli_fetch_object($ejecutar))
    
 
-    {
+    {  
+      
+       
         echo '<tr >'; 
+        echo '<td bgcolor= #00adb5>'.$fila->id_productos.'</td>';
         echo '<td bgcolor= #00adb5>'.$fila->nombre_producto.'</td>';
         echo '<td bgcolor= #aad8d3>'.$fila->precio.'</td>';
         echo '<td bgcolor= #eeeeee>'.$fila->referencia.'</td>';

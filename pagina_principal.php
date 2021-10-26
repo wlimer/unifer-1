@@ -31,7 +31,7 @@ $ejecutar = $conexion->query($sql);
 
     <!-- Custom styles for this template-->
     <link href="bstra/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles_login.css">
+
 
 </head>
 
