@@ -1,3 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles_pagina_pricipal.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+
 <?php
 session_start();
 $conexion = mysqli_connect("localhost","root","","ferreteria") or die("Error en la conexiÃ³n a la base de datos");
@@ -32,11 +48,11 @@ $ejecutar = $conexion->query($sql);
       
        
         echo '<tr >'; 
-        echo '<td bgcolor= #00adb5>'.$fila->id_productos.'</td>';
-        echo '<td bgcolor= #00adb5>'.$fila->nombre_producto.'</td>';
-        echo '<td bgcolor= #aad8d3>'.$fila->precio.'</td>';
-        echo '<td bgcolor= #eeeeee>'.$fila->referencia.'</td>';
-    echo '<td bgcolor=#fcecdd><img src="imagen/' .$fila->Imagen.'" width="300" height="150"></td>';
+        echo '<td>'.$fila->id_productos.'</td>';
+        echo '<td>'.$fila->nombre_producto.'</td>';
+        echo '<td>'.$fila->precio.'</td>';
+        echo '<td>'.$fila->referencia.'</td>';
+    echo '<td><img src="imagen/' .$fila->Imagen.'" width="300" height="150"></td>';
     echo '<td> <form action="actualiza.php" method="POST"> 
    <input type="hidden" name="id_productos" value="'.$fila->id_productos.'">
      <input type="submit" value="Actualizar "  class="form-control form-control-user" >

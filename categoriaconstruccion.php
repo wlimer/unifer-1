@@ -9,7 +9,8 @@ $ejecutar = $conexion->query($sql);
 
 
 <body background=pink>
-<link rel="stylesheet" type="text/css" href="css/styles_tablaproductos.css">
+
+<link rel="stylesheet" type="text/css" href="css/styles_categoriaconstruccion.css">
     <main class="separarproductos">
           <div class="contenedor__productostabla">    
           <table>
