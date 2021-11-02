@@ -15,7 +15,7 @@
 
 
 <?php
-session_start();
+
 $conexion = mysqli_connect("localhost","root","","ferreteria") or die("Error en la conexiÃ³n a la base de datos");
 $sql = "select * from productos";
 $ejecutar = $conexion->query($sql);
@@ -52,7 +52,7 @@ $ejecutar = $conexion->query($sql);
         echo '<td>'.$fila->nombre_producto.'</td>';
         echo '<td>'.$fila->precio.'</td>';
         echo '<td>'.$fila->referencia.'</td>';
-    echo '<td><img src="imagen/' .$fila->Imagen.'" width="300" height="150"></td>';
+    echo '<td><img src="imagen/'.$fila->Imagen.'" width="300" height="150"></td>';
     echo '<td> <form action="actualiza.php" method="POST"> 
    <input type="hidden" name="id_productos" value="'.$fila->id_productos.'">
      <input type="submit" value="Actualizar "  class="form-control form-control-user" >
