@@ -36,7 +36,7 @@ if ($reg = mysqli_fetch_array($registros)) {
 
         <div class="contenedor__consultar">
              
-        <form >
+        <form action="actualiza2.php" method="post"> 
                
                        <H2>CONSULTAR PRODUCTO</H2>
                    
