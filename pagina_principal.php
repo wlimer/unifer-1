@@ -109,7 +109,7 @@ a:active {
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">TIENDA EN LINEA</div>
+                <div class="sidebar-brand-text mx-3">UNIFER</div>
             </a>
 
             <!-- Divider -->
@@ -130,7 +130,10 @@ a:active {
                 Interface
             </div>
 
+            
             <!-- Nav Item - Pages Collapse Menu -->
+            
+         
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
@@ -142,31 +145,7 @@ a:active {
     echo '<a class="collapse-item" href="categoriaconstruccion.php?id='.$fila->id_categoria.'">'.$fila->nombre_categoria.'</a> <br>';
 } 
 
-?><style>
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
+?>
 </span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -181,40 +160,21 @@ a:active {
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="http://localhost/ferreteriaunifer/registro.php" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Registrarse</span>
+                    <span>Registrarme en unifer</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <a class="collapse-item" href="http://localhost/ferreteriaunifer/registro.php"> No tengo una cuenta</a>
+                        <a class="collapse-item" href="http://localhost/ferreteriaunifer/login.php"> iniciar sesion</a>
                     </div>
                 </div>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="http://localhost/ferreteriaunifer/login.php" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Iniciar Sesion</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li>
+        
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -225,14 +185,7 @@ a:active {
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="login.php" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Salir</span>
-                </a>
-                
-            </li>
+           
 
             <!-- Nav Item - Charts -->
             
@@ -345,7 +298,7 @@ a:active {
             </a>
             <a class="dropdown-item text-center small text-blue-500" href="compra.php">ir a comprar</a>
     </div>
-     -----------------------
+
 </li>
 <!-- Nav Item - Messages -->
 <li class="nav-item dropdown no-arrow mx-1">
@@ -418,7 +371,7 @@ a:active {
 <li class="nav-item dropdown no-arrow">
     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="mr-2 d-none d-lg-inline text-gray-600 small"> <?php echo $_SESSION[ 'emausu'];  ?> </span>
+        <span class="mr-2 d-none d-lg-inline text-gray-600 small"> <?php echo $_SESSION[ 'usuario'];  ?> </span>
         <img class="img-profile rounded-circle"
             src="bs/img/undraw_profile.svg">
     </a>
@@ -438,7 +391,7 @@ a:active {
             Activity Log
         </a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+        <a href="login.php"  data-target="#logoutModal" >
             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
             Salir
         </a>

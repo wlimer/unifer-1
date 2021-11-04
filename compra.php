@@ -5,7 +5,7 @@
 session_start();
 include ("db.php");
 $codigo=$_SESSION['id_productos'];
-if(isset ($_POST["comprar"]))
+if(isset ($_POST["GENERARPEDIDO"]))
 
 {
     echo 'entro por comprar';
@@ -110,7 +110,7 @@ $sql = "select * from productos where id_productos=$codigo";
             
 
             
-            <input class="boton" type="submit"  name="GENERAR PEDIDO" value="GENERAR PEDIDO" class="btn btn-success btn-user btn-block">
+            <input class="boton" type="submit"  name="GENERARPEDIDO" value="GENERARPEDIDO" class="btn btn-success btn-user btn-block">
 
         </form>
     </div>
