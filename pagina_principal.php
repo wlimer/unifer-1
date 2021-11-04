@@ -345,7 +345,7 @@ a:active {
             </a>
             <a class="dropdown-item text-center small text-blue-500" href="compra.php">ir a comprar</a>
     </div>
-    
+     -----------------------
 </li>
 <!-- Nav Item - Messages -->
 <li class="nav-item dropdown no-arrow mx-1">
@@ -480,3 +480,4 @@ include('categoriaconstruccion.php');
 </body>
 
 </html>
+

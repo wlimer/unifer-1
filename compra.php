@@ -57,7 +57,7 @@ $sql = "select * from productos where id_productos=$codigo";
             
             <br>
             <br>
-            <label class="comprar" >  PRECIO :  </label>
+            <label class="comprar" >  PRECIO :</label>
             
             <br>
             <br>
